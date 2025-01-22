@@ -4,7 +4,9 @@ import { useDropzone } from "react-dropzone";
 import { RocketIcon, CircleArrowDown } from "lucide-react";
 
 function FileUploader() {
-  const onDrop = useCallback((acceptedFiles: File[]) => {}, []);
+  const onDrop = useCallback((acceptedFiles: File[]) => {
+    console.log("Accepted files:", acceptedFiles);
+  }, []);
 
   const { getRootProps, getInputProps, isDragActive, isFocused, isDragAccept } =
     useDropzone({
@@ -29,7 +31,7 @@ function FileUploader() {
           ) : (
             <>
               <CircleArrowDown className="h-20 w-20 animate-bounce" />
-              <p>Drag 'n' drop some files here, or click to select files</p>
+              <p>Drag n drop some files here, or click to select files</p>
             </>
           )}
         </div>
