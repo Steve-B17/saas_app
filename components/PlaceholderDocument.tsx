@@ -13,7 +13,7 @@ function PlaceholderDocument() {
   return (
     <Button
       onClick={handleClick}
-      className="flex flex-col  w-64 h-80 rounded-xl  bg-gray-200 drop-shadow-md text-gray-400"
+      className="flex flex-col  w-64 h-80 rounded-xl  bg-gray-200 drop-shadow-md text-gray-400 items-center"
     >
       <PlusCircleIcon className="h-16 w-16" />
       <p>Add a document </p>
